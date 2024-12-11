@@ -1,91 +1,69 @@
 /* Загальні стилі */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #333;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Контейнер для блоків */
-.block {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #ffffff;
-    border-radius: 10px;
+/* Хедер */
+.header {
+    background-color: #d4e2d4;
+    text-align: center;
+    padding: 2rem 0;
+    color: #2a4d2a;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0 0;
+}
+
+/* Секції */
+.section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Заголовок сторінки */
-.block:first-of-type p:first-of-type {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4A4A4A;
-    text-align: center;
-    margin: 0 0 10px;
+.section h3 {
+    margin-bottom: 1rem;
+    color: #2a4d2a;
 }
 
-.block:first-of-type p:last-of-type {
-    font-size: 18px;
-    font-weight: 300;
-    color: #7D7D7D;
+.section ul {
+    padding-left: 1.5rem;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Футер */
+.footer {
     text-align: center;
-    margin: 0;
+    padding: 1rem 0;
+    background-color: #d4e2d4;
+    color: #2a4d2a;
 }
 
 /* Посилання */
 a {
-    color: #6CA6CD;
+    color: #2a4d2a;
     text-decoration: none;
-    font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Список */
-ul {
-    list-style-type: circle;
-    padding-left: 20px;
-    margin: 10px 0;
-}
-
-li {
-    margin: 5px 0;
-}
-
-/* Контактна інформація */
-.block:nth-of-type(2) {
-    text-align: center;
-}
-
-.block:nth-of-type(2) p {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #666;
-}
-
-/* Освіта */
-.block:last-of-type ul li {
-    font-size: 14px;
-    color: #4A4A4A;
-}
-
-/* Адаптивність */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .block {
-        padding: 15px;
-    }
-
-    .block:first-of-type p:first-of-type {
-        font-size: 24px;
-    }
 }
