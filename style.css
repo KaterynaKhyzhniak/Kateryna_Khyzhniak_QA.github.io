@@ -1,0 +1,91 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Контейнер для блоків */
+.block {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок сторінки */
+.block:first-of-type p:first-of-type {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.block:first-of-type p:last-of-type {
+    font-size: 18px;
+    font-weight: 300;
+    color: #7D7D7D;
+    text-align: center;
+    margin: 0;
+}
+
+/* Посилання */
+a {
+    color: #6CA6CD;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Список */
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Контактна інформація */
+.block:nth-of-type(2) {
+    text-align: center;
+}
+
+.block:nth-of-type(2) p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Освіта */
+.block:last-of-type ul li {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .block {
+        padding: 15px;
+    }
+
+    .block:first-of-type p:first-of-type {
+        font-size: 24px;
+    }
+}
